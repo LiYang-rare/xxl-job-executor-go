@@ -26,8 +26,8 @@ type callElement struct {
 
 //任务执行结果 200 表示任务执行正常，500表示失败
 type ExecuteResult struct {
-	Code int64       `json:"code"`
-	Msg  interface{} `json:"msg"`
+	Code int64       `json:"handleCode"`
+	Msg  interface{} `json:"handleMsg"`
 }
 
 /*****************  下行参数  *********************/
