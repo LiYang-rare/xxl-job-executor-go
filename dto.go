@@ -21,14 +21,16 @@ type call []*callElement
 type callElement struct {
 	LogID         int64          `json:"logId"`
 	LogDateTim    int64          `json:"logDateTim"`
-	ExecuteResult *ExecuteResult `json:"executeResult"`
-}
-
-//任务执行结果 200 表示任务执行正常，500表示失败
-type ExecuteResult struct {
+	//ExecuteResult *ExecuteResult `json:"executeResult"`
 	Code int64       `json:"handleCode"`
 	Msg  interface{} `json:"handleMsg"`
 }
+
+//任务执行结果 200 表示任务执行正常，500表示失败
+/*type ExecuteResult struct {
+	Code int64       `json:"handleCode"`
+	Msg  interface{} `json:"handleMsg"`
+}*/
 
 /*****************  下行参数  *********************/
 

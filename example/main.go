@@ -27,7 +27,7 @@ func main() {
 		}}
 	})
 	//注册任务handler
-	exec.RegTask("task.test", task.Test)
+	exec.RegTask("task.test",task.Test)
 	exec.RegTask("task.test2", task.Test2)
 	exec.RegTask("task.panic", task.Panic)
 	log.Fatal(exec.Run())
